@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+while true; do 
+
+    pwd
+
+    SSHOUTPUT=$(./piutils/run-on-pi "cat /etc/os-release" | wc -l)
+
+    echo $SSHOUTPUT
+
+    if [ $SSHOUTPUT -gt 0 ]; 
+    then
+        echo "Found something on port 10022!"
+        exit
+    else
+        echo "Nothing found on port 10022, sleeping..."
+        sleep 1
+    fi
+done

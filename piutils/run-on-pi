@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+sshpass -p raspberry ssh localhost -o ConnectTimeout=5 -o StrictHostKeyChecking=no -p 10022 -l pi "$@"
