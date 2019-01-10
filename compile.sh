@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt-get --allow-unauthenticated install -qq -y build-essential git m4 sudo python gcc-4.8 g++-4.8 make cmake libboost1.55-dev libboost-system1.55-dev libboost-program-options1.55-dev libboost-thread1.55-dev libboost-regex1.55-dev
+sudo apt-get --allow-unauthenticated install -qq -y build-essential git m4 sudo python clang-5.0 lldb-5.0 lld-5.0 make cmake libboost1.55-dev libboost-system1.55-dev libboost-program-options1.55-dev libboost-thread1.55-dev libboost-regex1.55-dev
 if [ -z ${ISTRAVIS+x} ]; 
 then
 	git clone https://github.com/cmangos/mangos-classic.git
