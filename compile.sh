@@ -5,7 +5,7 @@ if [ -z ${ISTRAVIS+x} ];
 then
 	git clone https://github.com/cmangos/mangos-classic.git
 	cd mangos-classic
-	git checkout -b last-good-commit d6ab92783a25d6239a2bfcd8d5fd7829ef7e3512
+	git checkout -b last-good-commit be2a00b1f007383b45b35b5c0c45bb21d3816ca8
         cd ..
 fi
 git apply MangosPI.patch
