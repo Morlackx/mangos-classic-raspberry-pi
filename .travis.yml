@@ -9,7 +9,7 @@ before_install:
 install:
     - curl -L -o 2015-11-21-raspbian-jessie-lite.img.xz "https://dl.dropbox.com/s/uqglxa5cpw24abd/2015-11-21-raspbian-jessie-lite.img.xz?dl=1"
     - unxz "2015-11-21-raspbian-jessie-lite.img.xz"
-    - git clone https://github.com/polaco1782/raspberry-qemu.git
+    - git clone https://github.com/Morlackx/raspberry-qemu.git
 
 before_script:
     - qemu-system-arm -kernel raspberry-qemu/kernel-qemu -cpu arm1176 -m 256 -M versatilepb -no-reboot -serial stdio -append "root=/dev/sda2 panic=1 rootfstype=ext4 rw" -net user,hostfwd=tcp::10022-:22 -net nic -display none -hda 2015-11-21-raspbian-jessie-lite.img &
