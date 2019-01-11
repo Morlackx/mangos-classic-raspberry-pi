@@ -4,6 +4,9 @@ sudo apt-get --allow-unauthenticated install -qq -y build-essential git m4 sudo 
 if [ -z ${ISTRAVIS+x} ]; 
 then
 	git clone https://github.com/cmangos/mangos-classic.git
+	cd mangos-classic
+	git checkout -b last-good-commit f1d799b7299dd46fc3311e9b4209bf4542b814e9
+        cd ..
 fi
 git apply MangosPI.patch
 export DEBIAN_FRONTEND=noninteractive
