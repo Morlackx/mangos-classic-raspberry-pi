@@ -2,7 +2,7 @@
 
 ----------
 
-** NOTE: due major changes in mangos-classic g3dlite library, the MangosPI.patch doesn't work anymore. The latest working commit (maybe also some newer, but not tested) is https://github.com/cmangos/mangos-classic/tree/f1d799b7299dd46fc3311e9b4209bf4542b814e9 . I'll update the patch in next weeks.
+** NOTE: due major changes in mangos-classic g3dlite library, the MangosPI.patch doesn't work anymore. The latest working commit (maybe also some newer, but not tested) is https://github.com/cmangos/mangos-classic/tree/f1d799b7299dd46fc3311e9b4209bf4542b814e9 . I'll update the patch ~~in next weeks~~, one day.. maybe.
 
 [![Build Status](https://www.travis-ci.org/Morlackx/mangos-classic-raspberry-pi.svg?branch=master)](https://www.travis-ci.org/Morlackx/mangos-classic-raspberry-pi)
 
